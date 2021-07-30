@@ -3,7 +3,7 @@
 // @namespace    https://github.com/zcoop98
 // @description  Tweaks the color variable associated with specific tokens in highlight.js on Stack Exchange sites
 // @author       zcoop98
-// @version      0.1
+// @version      0.2
 // @homepage     https://github.com/zcoop98/Userscripts
 // @updateURL    https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_HLJS-ClassTweaks.user.js
 // @downloadURL  https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_HLJS-ClassTweaks.user.js
@@ -29,9 +29,11 @@
 |*| -------------------------
 |*| _.hljs-number_: Moved from --highlight-keyword (Blue) to --highlight-symbol (Purple)
 |*| _.hljs-type_: Moved from --highlight-namespace (Orange) to --highlight-keyword (Blue)
+|*| R only - _.hljs-operator_: Added to --highlight-variable (Yellowish-Green)
 \*/
 
 GM_addStyle(`
+/* General Classes */
   /* Near Black/ White */
     code[class*="language-"] .hljs-subst,
     pre.s-code-block>code .hljs-subst {
@@ -148,5 +150,11 @@ GM_addStyle(`
     code[class*="language-"] .hljs-addition,
     pre.s-code-block>code .hljs-addition {
         color: var(--highlight-addition) !important
+    }
+/* Language-Specific Tweaks/ Classes */
+  /* lang-r */
+    code.language-r .hljs-operator,
+    pre.s-code-block.lang-r>code .hljs-operator {
+        color: var(--highlight-variable) !important
     }
 `);
