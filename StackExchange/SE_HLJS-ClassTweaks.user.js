@@ -1,10 +1,13 @@
 // ==UserScript==
 // @name         Stack Exchange highlight.js Tweaks
 // @namespace    https://github.com/zcoop98
-// @description  Tweaks the color associated with specific tokens in highlight.js on Stack Exchange sites
+// @description  Tweaks the color variable associated with specific tokens in highlight.js on Stack Exchange sites
 // @author       zcoop98
 // @version      0.1
 // @homepage     https://github.com/zcoop98/Userscripts
+// @updateURL    https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_HLJS-ClassTweaks.user.js
+// @downloadURL  https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_HLJS-ClassTweaks.user.js
+// @supportURL   https://github.com/zcoop98/Userscripts
 //
 // @grant        GM_addStyle
 // @run-at       document-start
@@ -29,19 +32,19 @@
 \*/
 
 GM_addStyle(`
-    /* Near Black/ White */
+  /* Near Black/ White */
     code[class*="language-"] .hljs-subst,
     pre.s-code-block>code .hljs-subst {
         color: var(--highlight-color) !important
     }
 
-    /* Grey */
+  /* Grey */
     code[class*="language-"] .hljs-comment,
     pre.s-code-block>code .hljs-comment {
         color: var(--highlight-comment) !important
     }
 
-    /* Magenta */
+  /* Magenta */
     code[class*="language-"] .hljs-keyword,
     pre.s-code-block>code .hljs-keyword,
     code[class*="language-"] .hljs-selector-tag,
@@ -57,13 +60,13 @@ GM_addStyle(`
         color: var(--highlight-keyword) !important
     }
 
-    /* Blue */
+  /* Blue */
     code[class*="language-"] .hljs-attr,
     pre.s-code-block>code .hljs-attr {
         color: var(--highlight-attribute) !important
     }
 
-    /* Magenta */
+  /* Magenta */
     code[class*="language-"] .hljs-number,
     pre.s-code-block>code .hljs-number,
     code[class*="language-"] .hljs-attribute,
@@ -71,7 +74,7 @@ GM_addStyle(`
         color: var(--highlight-symbol) !important
     }
 
-    /* Orange */
+  /* Orange */
     code[class*="language-"] .hljs-name,
     pre.s-code-block>code .hljs-name,
     code[class*="language-"] .hljs-selector-id,
@@ -83,13 +86,13 @@ GM_addStyle(`
         color: var(--highlight-namespace) !important
     }
 
-    /* Blue */
+  /* Blue */
     code[class*="language-"] .hljs-selector-class,
     pre.s-code-block>code .hljs-selector-class {
         color: var(--highlight-keyword) !important
     }
 
-    /* Yellow-ish Green */
+  /* Yellow-ish Green */
     code[class*="language-"] .hljs-operator,
     pre.s-code-block>code .hljs-operator,
     code[class*="language-"] .hljs-string,
@@ -111,7 +114,7 @@ GM_addStyle(`
         color: var(--highlight-variable) !important
     }
 
-    /* Blue */
+  /* Blue */
     code[class*="language-"] .hljs-meta,
     pre.s-code-block>code .hljs-meta,
     code[class*="language-"] .hljs-selector-pseudo,
@@ -119,7 +122,7 @@ GM_addStyle(`
         color: var(--highlight-keyword) !important
     }
 
-    /* Orange */
+  /* Orange */
     code[class*="language-"] .hljs-built_in,
     pre.s-code-block>code .hljs-built_in,
     code[class*="language-"] .hljs-title,
@@ -129,7 +132,7 @@ GM_addStyle(`
         color: var(--highlight-literal) !important
     }
 
-    /* Lighter Grey */
+  /* Lighter Grey */
     code[class*="language-"] .hljs-bullet,
     pre.s-code-block>code .hljs-bullet,
     code[class*="language-"] .hljs-code,
@@ -137,13 +140,13 @@ GM_addStyle(`
         color: var(--highlight-punctuation) !important
     }
 
-    /* Red */
+  /* Red */
     code[class*="language-"] .hljs-deletion,
     pre.s-code-block>code .hljs-deletion {
         color: var(--highlight-deletion) !important
     }
 
-    /* Green */
+  /* Green */
     code[class*="language-"] .hljs-addition,
     pre.s-code-block>code .hljs-addition {
         color: var(--highlight-addition) !important
