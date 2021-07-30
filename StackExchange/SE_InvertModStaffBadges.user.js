@@ -5,6 +5,9 @@
 // @author       zcoop98
 // @version      1.0
 // @homepage     https://github.com/zcoop98/Userscripts
+// @updateURL    https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_InvertModStaffBadges.user.js
+// @downloadURL  https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_InvertModStaffBadges.user.js
+// @supportURL   https://github.com/zcoop98/Userscripts
 //
 // @grant        GM_addStyle
 // @run-at       document-start
