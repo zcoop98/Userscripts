@@ -93,8 +93,6 @@ GM_addStyle(`
     }
 
   /* Yellow-ish Green */
-    code[class*="language-"] .hljs-operator,
-    pre.s-code-block>code .hljs-operator,
     code[class*="language-"] .hljs-string,
     pre.s-code-block>code .hljs-string,
     code[class*="language-"] .hljs-regexp,
