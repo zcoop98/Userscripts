@@ -6,6 +6,11 @@
 // @author       zcoop98
 // @grant        none
 //
+// @homepage     https://github.com/zcoop98/Userscripts
+// @updateURL    https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_GoToAccepted.user.js
+// @downloadURL  https://github.com/zcoop98/Userscripts/raw/master/StackExchange/SE_GoToAccepted.user.js
+// @supportURL   https://github.com/zcoop98/Userscripts/issues
+//
 // All Main and Meta Stack Exchange Sites:
 // @match        https://stackoverflow.com/questions/*
 // @match        https://meta.stackoverflow.com/questions/*
